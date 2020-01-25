@@ -5,6 +5,8 @@ This fact completely discards the idea of frequency analysis to obtain the key o
 There comes a new concept of Index of Coincidence (IC) which in a mathematical terminology is the probability of getting to randomly selected characters equal where we will be using this technique to obtain the key size and there by obtaining the key using simple bruteforce.
 
 **How do I get the Index of Coincidence?** Is the question now  let’s suppose we have a text of size N wherein we have n type of characters for finding out what is the index of coincidence we first need to calculate the independent probability of finding each character for that we can use a simple maths concept of permutation and combination along with probability.
+
+![alt test](PICTURES/ICpic1.jpg)
 					
 Now we need to just add up all the obtained probabilities of all the n characters to obtain our IC 
 			 	
