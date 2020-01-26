@@ -1,1 +1,1 @@
-ctf{challenge_done_asdgfgsfhdaaaaaaaaaaaaaaaaa}
+ctf{challenge_done}
