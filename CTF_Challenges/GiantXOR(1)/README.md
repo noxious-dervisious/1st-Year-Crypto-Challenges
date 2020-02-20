@@ -10,7 +10,7 @@ There comes a new concept of Index of Coincidence (IC) which in a mathematical t
 					
 Now we need to just add up all the obtained probabilities of all the n characters to obtain our IC 
 
-![pic2](https://drive.google.com/open?id=1wyJMZSfQg7I_gEq6ympkyakFnc8TAl52)
+![pic2](https://github.com/noxious-dervisious/1st-Year-Crypto-Challenges/blob/master/CTF_Challenges/GiantXOR(1)/ICpic2.jpg)
 			 	
 
 **Now what to do with the IC?** Now that we know what is IC we can proceed further to obtain the key length for that we have  to follow a few basic steps at first we have to divide the whole ciphertext into blocks of probable key lengths and find their respective ICs and compare them and select the one with the highest IC value as our key length. We further know that each of these divided blocks are encrypted by the same key.Now the most interesting part where we need to bruteforce the ciphertext to obtain the main key.   
