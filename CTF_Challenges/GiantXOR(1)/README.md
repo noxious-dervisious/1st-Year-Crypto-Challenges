@@ -17,4 +17,3 @@ Now we need to just add up all the obtained probabilities of all the n character
 
 **Now again one more question on how to do that ?** As by now we know that our key length (i.e 12 for the given challenge) we first need to divide the whole ciphertext in blocks according to our key length and then bruteforce a single byte XOR but the problem here is that we won’t get a plaintext in english in turn we will obtain a base64 encoded strings part i.e only a segment of the base64 encoded string  so our aim is to check whether the obtained segment can be base64 decoded or not if yes then proceed with that character as a character in the key.Similarly from every block we will obtain a character of the key which all together forms the main key which can be used to obtain the plaintext. For doing so we need to apply a basic repeated key XOR function.
 
-For the codes please refer.
