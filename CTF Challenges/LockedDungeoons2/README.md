@@ -18,8 +18,8 @@ dec_recv_str = aescipher.decrypt_wrapper(enc_recv_str)
 
 First things first: this challenge uses AES in CBC mode, with a random key and IV for each connection.Now we need to understand a few things about AES CBC mode first before procceding with anything.
 
-![blockdiagramdecryption](https://github.com/noxious-dervisious/1st-Year-Crypto-Challenges/blob/master/CTF_Challenges/LockedDungeoons2/601px-CBC_encryption.svg.png)
-![blockdiagramencryption](https://github.com/noxious-dervisious/1st-Year-Crypto-Challenges/blob/master/CTF_Challenges/LockedDungeoons2/601px-CBC_decryption.svg.png)
+![blockdiagramdecryption](https://github.com/noxious-dervisious/Begineer-s-Challenge/blob/master/CTF%20Challenges/LockedDungeoons2/Images/CBC_decryption.png)
+![blockdiagramencryption](https://github.com/noxious-dervisious/Begineer-s-Challenge/blob/master/CTF%20Challenges/LockedDungeoons2/Images/CBC_encryption.png)
 
 For the first part of the challenge, we need to insert get_modflag_md5 into the decrypted data. To do so, we use the knowledge that send_modflag_enc will be part of the decrypted data. To simplify things, we will assume the decrypted data will have the form send_modflag_encflag{.....}. The same method can be extended to situations where send_modflag_enc is in another block.
 
