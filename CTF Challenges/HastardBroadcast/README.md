@@ -18,7 +18,7 @@ Thus we can get the following by solving using Chinese Remainder Theorem:
 where b<sub>i</sub> = N/N<sub>i</sub>, b<sub>i</sub><sup>'</sup> = b<sub>i</sub><sup>-1</sup> mod N<sub>i</sub> and N = N<sub>1</sub>\* N<sub>2</sub>\* N<sub>3</sub>. Since we know that M < N<sub>i</sub> (If our message M is larger than the modulus N, then we won't get the exact message when we decrypt the ciphertext, we will get an equivalent message instead, which is not favourable).   
 Therefore we can write M < N<sub>1</sub>N<sub>2</sub>N<sub>3</sub>. We can easily calculate `M` now by directly taking the `cube root` of M<sup>3</sup> to get `M`.
 
-You can find an implementation of this attack here: [hastad_unpadded.py](exploit.py)
+You can find an implementation of this attack here: [exploit.py](exploit.py)
 
 ## So what am I suppose to do with this ?
 ```
