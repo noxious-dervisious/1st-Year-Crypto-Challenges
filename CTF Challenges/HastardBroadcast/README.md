@@ -30,7 +30,7 @@ You can find an implementation of this attack here: [exploit.py](exploit.py)
 6. Check if g is a monic polynomial, if not transform it into a monic polynomial
 7. Find small roots of g and check if that is the flag
 ```
-Before you start with this challenge I want you to know about something else known as Small Public Key Exponent attack.
+**Note -** Before you start with this challenge I want you to know about something else known as Small Public Key Exponent attack.
 
 # Small Public Key Exponent Attack
 
