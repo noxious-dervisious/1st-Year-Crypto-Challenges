@@ -22,13 +22,13 @@ then
 
 ```f(g(m)) = m and g(f(m)) = m```
 
-The idea behind a digital signature using RSA is that f is a function that is known to everyone, but only you know yourdecryption function. In order for Alice to sign a message, m, sends gAHmL together with an indication that the messageis from Alice. When Bob gets it, he sees that the message is from Alice and applies her public encryption function, fA,
+The idea behind a digital signature using RSA is that f is a function that is known to everyone, but only you know yourdecryption function. In order for Alice to sign a message, m, sends g(m) together with an indication that the messageis from Alice. When Bob gets it, he sees that the message is from Alice and applies her public encryption function, fA,
 to g(m) and will get m. If Claude tries to send a spoofed message, m', purportedly from Alice to Bob, he has no wayof being successful since he doesn’t know gA.
 You can sign a message without encrypting it. In the scheme described inthis section, anyone can intercept Alice’ssigned message and read it because her public key is known.
 
 ### Blinding Attack on Digital Signature using RSA.
 
-One of the simplest blind signature schemes is based on RSA signing. A traditional RSA signature is computed by raising the message m to the secret exponent d modulo the public modulus N. The blind version uses a random value r, such that r is relatively prime to N (i.e. gcd(r, N) = 1). r is raised to the public exponent e modulo N, and the resulting value r^e mod N is used as a blinding factor. The author of the message computes the product of the message and blinding factor, i.e.:
+One of the simplest blind signature schemes is based on RSA signing. A traditional RSA signature is computed by raising the message m to the secret exponent d modulo the public modulus N. The blind version uses a random value r, such that r is relatively prime to N (i.e. gcd(r, N) = 1). r is raised to the public exponent e modulo N, and the resulting value <img src="https://render.githubusercontent.com/render/math?math={r^{e}}modN"> is used as a blinding factor. The author of the message computes the product of the message and blinding factor, i.e.:
 
 ## <img src="https://render.githubusercontent.com/render/math?math=m^{'} = m*{r^{e}}modN">
 
