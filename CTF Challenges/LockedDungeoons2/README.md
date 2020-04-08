@@ -69,4 +69,4 @@ The easiest way to do this is to add two blocks to the ciphertext: aaaaaaaaaaaaa
 
 This scenerio perfectly depicts the application of ```byte-byte decryption of a CBC encryption ```
 
-For further reference please refer my [exploit](https://github.com/noxious-dervisious/1st-Year-Crypto-Challenges/blob/master/CTF_Challenges/LockedDungeoons2/exploit.py)
+For further reference please refer my [exploit](https://github.com/noxious-dervisious/Begineer-s-Challenge/blob/master/CTF%20Challenges/LockedDungeoons2/exploit.py)
