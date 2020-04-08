@@ -12,7 +12,7 @@ For this challenge we need to be versed with the following attacks :
 5. Scenerio when gcd(d,phi) != 1
 ```
 
-If you are okay with all the pre-requisites. Then you can simple follow the below steps to get your flag :
+If you are okay with all the pre-requisites. Then you can simply follow the below steps to get your flag :P
 
 ```
 Chinese Remainder Theorem -> p = 109935857933867829728985398563235455481120300859311421762540858762721955038310117609456763338082237907005937380873151279351831600225270995344096532750271070807051984097524900957809427861441436796934012393707770012556604479065826879107677002380580866325868240270494148512743861326447181476633546419262340100453
@@ -31,5 +31,3 @@ calculate the square root : [114401188227479584680884046151299704656920536168767
 
 flag : de1ctf{9b10a98b-71bb-4bdf-a6ff-f319943de21f}
 ```
-
-Worth your time and hardwork :P
