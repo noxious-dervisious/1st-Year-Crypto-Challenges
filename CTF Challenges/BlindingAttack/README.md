@@ -30,20 +30,21 @@ You can sign a message without encrypting it. In the scheme described inthis sec
 
 One of the simplest blind signature schemes is based on RSA signing. A traditional RSA signature is computed by raising the message m to the secret exponent d modulo the public modulus N. The blind version uses a random value r, such that r is relatively prime to N (i.e. gcd(r, N) = 1). r is raised to the public exponent e modulo N, and the resulting value r^e mod N is used as a blinding factor. The author of the message computes the product of the message and blinding factor, i.e.:
 
-<img src="https://render.githubusercontent.com/render/math?math=m^{'} = m*{r^{e}}">
+## <img src="https://render.githubusercontent.com/render/math?math=m^{'} = m*{r^{e}}modN">
 
 and sends the resulting value {\displaystyle m'}m' to the signing authority. Because r is a random value and the mapping r^e mod N is a permutation it follows that r^e mod  N is random too. This implies that m' does not leak any information about m. The signing authority then calculates the blinded signature s' as:
 
-![image2]
+## <img src="https://render.githubusercontent.com/render/math?math=s^{'} = (m{')^{d}}modN">
 
 s' is sent back to the author of the message, who can then remove the blinding factor to reveal s, the valid RSA signature of m:
 
-![image3]
+## <img src="https://render.githubusercontent.com/render/math?math=s = (s{')*r^{-1}}modN">
 
-This works because RSA keys satisfy the equation ![image5]
+This works because RSA keys satisfy the equation <img src="https://render.githubusercontent.com/render/math?math=r^{ed} = rmodN">
+
 and thus,
 
-![image4]
+## <img src="https://render.githubusercontent.com/render/math?math=s = (s{')*r^{-1}}=(m{')^d*r^{-1}}=m^{d}*r^{ed}*r^{-1}=m^{d}*r*r^{-1}=m^{d}modN">
 
 hence s is indeed the signature of m.
 
