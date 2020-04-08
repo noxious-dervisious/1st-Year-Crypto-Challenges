@@ -6,6 +6,8 @@ Before moving into this challenge we will look into what happens in a Digital Si
 
 ### Digital Signature using RSA
 
+![image0](https://github.com/noxious-dervisious/Begineer-s-Challenge/blob/master/CTF%20Challenges/BlindingAttack/Picture/1024px-Illustration_of_digital_signature.svg.png)
+
 How Signing Works
 For any RSA public/private key triple, He, d, nL, the key mathematical fact is that the encryption and decryption
 functions are inverses of one another. That is, if
