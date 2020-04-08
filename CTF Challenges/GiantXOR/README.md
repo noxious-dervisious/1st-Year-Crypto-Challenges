@@ -6,11 +6,11 @@ There comes a new concept of Index of Coincidence (IC) which in a mathematical t
 
 **How do I get the Index of Coincidence?** Is the question now  let’s suppose we have a text of size N wherein we have n type of characters for finding out what is the index of coincidence we first need to calculate the independent probability of finding each character for that we can use a simple maths concept of permutation and combination along with probability.
 
-![pic1](https://github.com/noxious-dervisious/1st-Year-Crypto-Challenges/blob/master/CTF_Challenges/GiantXOR(1)/ICpic1.jpg)
+![pic1](https://github.com/noxious-dervisious/Begineer-s-Challenge/blob/master/CTF%20Challenges/GiantXOR/Images/ICpic1.jpg)
 					
 Now we need to just add up all the obtained probabilities of all the n characters to obtain our IC 
 
-![pic2](https://github.com/noxious-dervisious/1st-Year-Crypto-Challenges/blob/master/CTF_Challenges/GiantXOR(1)/ICpic2.jpg)
+![pic2](https://github.com/noxious-dervisious/Begineer-s-Challenge/blob/master/CTF%20Challenges/GiantXOR/Images/ICpic2.jpg)
 			 	
 
 **Now what to do with the IC?** Now that we know what is IC we can proceed further to obtain the key length for that we have  to follow a few basic steps at first we have to divide the whole ciphertext into blocks of probable key lengths and find their respective ICs and compare them and select the one with the highest IC value as our key length. We further know that each of these divided blocks are encrypted by the same key.Now the most interesting part where we need to bruteforce the ciphertext to obtain the main key.   
