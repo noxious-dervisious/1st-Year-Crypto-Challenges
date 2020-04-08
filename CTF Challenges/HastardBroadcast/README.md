@@ -37,7 +37,7 @@ Before you start with this challenge I want you to know about something else kno
 Let’s say Alice wants to share a small message M (a symmetric key) over an insecure channel. She encrypts it using RSA. n is chosen from strong primes and is quite big but she chose e=3.
 It wouldn’t be a problem if she had used padding but it’s obviously not the case. You intercept the message and deduce from the public key that it was computed like so :
 
-## <img src="https://render.githubusercontent.com/render/math?math=c = m^{3}modN">
+&nbsp;&nbsp;## <img src="https://render.githubusercontent.com/render/math?math=c = m^{3}modN">
 
 But because M is small, <img src="https://render.githubusercontent.com/render/math?math=m^{3}"> < N
  so it wasn’t affected by the modulo. You just need to compute the third root of C to get the original message.
