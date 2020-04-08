@@ -32,7 +32,8 @@ One of the simplest blind signature schemes is based on RSA signing. A tradition
 
 ## <img src="https://render.githubusercontent.com/render/math?math=m^{'} = m*{r^{e}}modN">
 
-and sends the resulting value {\displaystyle m'}m' to the signing authority. Because r is a random value and the mapping r^e mod N is a permutation it follows that r^e mod  N is random too. This implies that m' does not leak any information about m. The signing authority then calculates the blinded signature s' as:
+and sends the resulting value m' to the signing authority. Because r is a random value and the mapping <img src="https://render.githubusercontent.com/render/math?math={r^{e}}modN"> is a permutation it follows that <img src="https://render.githubusercontent.com/render/math?math={r^{e}}modN">
+ is random too. This implies that m' does not leak any information about m. The signing authority then calculates the blinded signature s' as:
 
 ## <img src="https://render.githubusercontent.com/render/math?math=s^{'} = (m{')^{d}}modN">
 
