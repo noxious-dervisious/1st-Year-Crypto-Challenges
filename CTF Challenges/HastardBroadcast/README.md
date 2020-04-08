@@ -7,9 +7,6 @@ Suppose Alice sends an unpadded message M to `k` people P<sub>1</sub>, P<sub>2</
 
 Let us understand this attack using an example: Alice sends a message `M` to 3 three different people using the same public key exponent `e = 3`. Let the ciphertext received by `i`th receiver be C<sub>i</sub> where C<sub>i</sub> = M<sup>3</sup> mod N<sub>i</sub>. We have to assume that **gcd(N<sub>i</sub>, N<sub>j</sub>) == 1** where `i != j`
 
-><i><strong>Quick Question</strong></i>: What if GCD(N<sub>i</sub>, N<sub>j</sub>) != 1?  
->Then the moduli pair (N<sub>i</sub>, N<sub>j</sub>) is vulnerable to [Common Prime Attack](../Attack-Common-Prime/)
-
 We can now write:
 
 ![equation](https://github.com/noxious-dervisious/Begineer-s-Challenge/blob/master/CTF%20Challenges/HastardBroadcast/1.gif)  
