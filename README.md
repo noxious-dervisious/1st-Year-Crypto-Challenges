@@ -1,2 +1,3 @@
-# Begineer's Level Challenges 
-Welcome to my Crypto Library
+## CTF Write Ups
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These are some the write-ups of some CTFs that I have solved during the CTF or after the CTF is over. For those who don't what a CTF is a quick introdruction - A Capture the flag (CTF) is a traditional outdoor game where two teams each have a flag (or other marker) and the objective is to capture the other team's flag, located at the team's "base," and bring it safely back to their own base. Enemy players can be "tagged" by players in their home territory and, depending on the rules, they may be out of the game, become members of the opposite team, sent back to their own territory, or frozen in place ("in jail") until freed by a member of their own team this is what we literally mean by a CTF but being a cyber security enthusiast we define CTF as " A cyber security CTF is a competition between security professionals and/or students learning about cyber security. This competition is used as a learning tool for everyone that is interested in cyber security and it can help sharpen the tools they have learned during their training "
